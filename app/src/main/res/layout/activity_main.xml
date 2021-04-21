@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    android:background="#ECF1F7"
+    tools:openDrawer="start"
+    tools:context=".MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:background="#0253A2">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/compassionlogo"
+                    android:textAlignment="center"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/ic_baseline_notifications_24"/>
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenu"
+        app:headerLayout="@layout/navheader"
+        android:layout_gravity="start"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:background="@drawable/childsmile"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/head"
+                        android:fontFamily="@font/kanit_bold"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:layout_marginLeft="15dp"
+                        android:text="WE RISE"
+                        android:textAlignment="textStart"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/head2"
+                        android:fontFamily="@font/kanit_regular"
+                        android:textColor="@color/white"
+                        android:textSize="35sp"
+                        android:text=" AS ONE"
+                        android:textAlignment="textStart"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:id="@+id/taghead1"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:background="#108CBF"
+                        android:layout_marginLeft="15dp"
+                        android:text="CORONAVIRUS"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="28dp"
+                        android:id="@+id/taghead2"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@color/black"
+                        android:text="RESPONSE"
+                        android:textAlignment="center"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:orientation="vertical"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/learn"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textColor="#0253A2"
+                        android:textSize="20sp"
+                        android:text="Learn more about how we're responding to COVID_19"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_italic"
+                        android:textColor="#0253A2"
+                        android:clickable="true"
+                        android:textSize="16sp"
+                        android:id="@+id/tellmore"
+                        android:layout_marginTop="5dp"
+                        android:text="Tell me More ->"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textColor="#0253A2"
+                        android:visibility="gone"
+                        android:textSize="15sp"
+                        android:id="@+id/info"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:text="App Created By Mathesh, Hope You like it....!! This is a sample text just to show the emphasis text functionality"
+                        android:textAlignment="textStart"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/firstimg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/child1"
+                            />
+
+                        <TextView
+                            android:id="@+id/card1text"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="New Sponsorship"
+                            android:padding="2dp"
+                            android:textColor="#FFFF"
+                            android:textSize="12dp"
+                            android:textAlignment="center"
+                            android:background="@color/paleyellow"/>
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:orientation="horizontal"
+                            android:background="@color/paleyellow">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:padding="2dp"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Reagale " />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/palered"
+                        android:id="@+id/secondcard">
+
+
+                        <TextView
+                            android:id="@+id/secondcardtxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Johanna"
+                            android:padding="8dp"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+
+
+                        <ImageView
+                            android:id="@+id/giftbox"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:padding="8dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="0dp"
+                            android:src="@drawable/gift_box" />
+
+                        <TextView
+                            android:id="@+id/secondcardtxt1"
+                            android:layout_alignBottom="@+id/giftbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Birthday in 2 months"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:background="#77A663">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:padding="2px"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Give a Gift " />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/child2"
+                            android:scaleType="fitStart"
+                            android:id="@+id/thirdimg"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="How to use Amazon Smile and give as you live"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:background="#C76B2D"
+                            android:padding="2dp"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:padding="2dp"
+                            android:orientation="horizontal"
+                            android:background="#A3A382">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Weather"
+                                android:textSize="18sp"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Weybridge"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:padding="2dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:padding="2dp"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/storm"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:textColor="#989898"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="9 C"
+                                android:textSize="30sp"/>
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="200dp"
+                            android:layout_height="1dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:background="#7a8b8b8b" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Peru"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="50dp"
+                            android:padding="2dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:padding="2dp"
+                                android:layout_width="100dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/ic_baseline_wb_sunny_24"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:textColor="#989898"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="22 C"
+                                android:textSize="30sp"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="180dp"
+                            android:layout_height="30dp"
+                            android:padding="2dp"
+                            android:orientation="horizontal"
+                            android:background="#A3A382">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="25dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="My Community"
+                                android:textSize="18sp"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:background="@color/paleyellow">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="Climbing"
+                                android:textColor="@color/white"
+                                android:textSize="18dp" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="60dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/child2" />
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_regular"
+                                android:layout_marginTop="30dp"
+                                android:text="3 Years of Sponsorship Thank You"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="160dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="10dp"
+                        app:cardElevation="2dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Thank You"
+                                android:padding="8dp"
+                                android:textColor="@color/paleyellow"
+                                android:textSize="14dp" />
+
+
+
+                            <ImageView
+                                android:id="@+id/giftbox1"
+                                android:layout_width="50dp"
+                                android:layout_height="60dp"
+                                android:padding="8dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="0dp"
+                                android:src="@drawable/gift_box" />
+
+                            <TextView
+                                android:layout_alignBottom="@+id/giftbox1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="5 gifts given this year"
+                                android:textColor="@color/black"
+                                android:textSize="12dp" />
+
+                            <LinearLayout
+                                android:layout_alignParentBottom="true"
+                                android:layout_width="180dp"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal"
+                                android:background="@color/paleyellow">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/white"
+                                    android:padding="2px"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:text="Give a Gift " />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="22dp"
+                                    android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                            </LinearLayout>
+
+
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:padding="2dp"
+                            android:orientation="horizontal"
+                            android:background="@color/paleyellow">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="20dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="New Photo"
+                                android:textSize="18sp"/>
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/childstudy"
+                            android:layout_marginTop="30dp"
+                            android:scaleType="fitXY"
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <VideoView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/youtube_video"
+                            />
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#8D1B2F">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Sergio"
+                            android:padding="8dp"
+                            android:textColor="@color/white"
+                            android:textSize="14dp" />
+
+
+
+                        <ImageView
+                            android:id="@+id/giftbox3"
+                            android:layout_width="60dp"
+                            android:layout_height="100dp"
+                            android:padding="8dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/gratitude" />
+
+                        <TextView
+                            android:layout_marginTop="25dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:text="Give thanks that Sergio receives regular home visits from caring project staff"
+                            android:textColor="@color/white"
+                            android:textSize="12dp" />
+
+                        <LinearLayout
+                            android:layout_alignParentBottom="true"
+                            android:layout_width="180dp"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:background="#B84B55">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:padding="2px"
+                                android:fontFamily="@font/roboto_medium"
+                                android:text="Pray now " />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="22dp"
+                                android:src="@drawable/ic_baseline_arrow_forward_24"/>
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+
+
+
